@@ -1,6 +1,6 @@
 #1.Cenário para Teste Tela de lista de produtos
 Cenário A: Adicionar produtos ao carrinho
-Dado que um cliente quero adicionar um produto ao carrinho
+Dado que um cliente quer adicionar um produto ao carrinho
 E o produto ainda não esteja dentro do carrinho
 Quando ele clicar em adicionar
 Então eu devo adicionar o produto ao carrinho
