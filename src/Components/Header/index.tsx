@@ -1,8 +1,7 @@
 import React from 'react';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
-import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { useCart } from '../../Contexts/Cart';
 import {
   Container,
@@ -19,13 +18,15 @@ const Header: React.FC = () => {
     <Container>
       <Link to="/">
         {location.pathname !== '/' && (
-          <KeyboardBackspaceIcon />
+          <KeyboardBackspaceIcon aria-label="arrow back" />
         )}
       </Link>
       <Link to="cart">
         <ContainerHeader>
-          {inCart && <Badge>{Cart.length}</Badge>}
-          <ShoppingCartIcon />
+          {inCart && (
+            <Badge aria-label="Badge">{Cart.length}</Badge>
+          )}
+          <ShoppingCartIcon aria-label="shopping cart" />
         </ContainerHeader>
       </Link>
     </Container>
