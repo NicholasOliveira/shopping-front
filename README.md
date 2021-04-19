@@ -5,7 +5,7 @@
 ## Scripts Available
 
 for run project use command down:
-### `npm start`
+### `npm run start`
 
 open main components view easy
 ### `npm run storybook`
