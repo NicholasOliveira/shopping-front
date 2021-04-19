@@ -1,30 +1,22 @@
 import React, { useState } from 'react';
-import Home from './pages/Home';
 import {
   ProductContext,
   ProductsObj,
 } from './Contexts/Product';
-import { CartContext, CartObj } from './Contexts/Cart';
-
+import { CartContext } from './Contexts/Cart';
+import { Products } from './Interfaces/Products';
+import Routes from './Routes/Routes';
 function App() {
   const [Product, setProduct] = useState(ProductsObj);
-  const [Cart, setCart] = useState(CartObj);
+  const [Cart, setCart] = useState<Products>([]);
+
   return (
-    <div className="App">
-      <ProductContext.Provider
-        value={{
-          Product,
-          setProduct,
-        }}>
-        <CartContext.Provider
-          value={{
-            Cart,
-            setCart,
-          }}>
-          <Home />
-        </CartContext.Provider>
-      </ProductContext.Provider>
-    </div>
+    <ProductContext.Provider
+      value={{ Product, setProduct }}>
+      <CartContext.Provider value={{ Cart, setCart }}>
+        <Routes />
+      </CartContext.Provider>
+    </ProductContext.Provider>
   );
 }
 
