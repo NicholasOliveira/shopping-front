@@ -1,6 +1,6 @@
 # Shopping Cart APP
 
-#### Demo: [http://localhost:3000](http://localhost:3000)
+#### Demo: [LINK TO DEMO](https://musing-stonebraker-a4df74.netlify.app/)
 
 ## Scripts Available
 
