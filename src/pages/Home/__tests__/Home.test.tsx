@@ -2,11 +2,24 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Home from '../';
 
-test('renders component Home', () => {
-  render(<Home />);
+const MockUseProduct = jest.fn();
+jest.mock('../../../Contexts/Product', () => ({
+  useProduct: () => MockUseProduct(),
+}));
+
+test('renders component Home and Products', () => {
+  MockUseProduct.mockReturnValue({ Product: mock });
+  const { getByText } = render(<Home />);
+  expect(getByText('Produto mockado')).toBeInTheDocument();
 });
 
-test('renders component Home Products', () => {
-  render(<Home />);
-});
-
+const mock = [
+  {
+    id: 1,
+    name: 'Produto mockado',
+    img: {
+      url: 'urlImagem',
+      title: 'titleImagem',
+    },
+  },
+];
