@@ -1,8 +1,15 @@
-import React from "react";
-import { Container, ImgProduct, Title, BtnAction } from "./ProductItem.styles";
-import { Product } from "../../../../Interfaces/Products";
+import React from 'react';
+import {
+  Container,
+  ImgProduct,
+  Title,
+  BtnAction,
+} from './ProductItem.styles';
+import { Product } from '../../../../Interfaces/Products';
 
-const ProductItem: React.FC<Product> = (product: Product) => {
+const ProductItem: React.FC<Product> = (
+  product: Product,
+) => {
   return (
     <Container>
       <ImgProduct src={product.img.url} />

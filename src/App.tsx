@@ -1,7 +1,10 @@
-import React, { useState } from "react";
-import Home from "./pages/Home";
-import { ProductContext, ProductsObj } from "./Contexts/Product";
-import { CartContext, CartObj } from "./Contexts/Cart";
+import React, { useState } from 'react';
+import Home from './pages/Home';
+import {
+  ProductContext,
+  ProductsObj,
+} from './Contexts/Product';
+import { CartContext, CartObj } from './Contexts/Cart';
 
 function App() {
   const [Product, setProduct] = useState(ProductsObj);
@@ -12,14 +15,12 @@ function App() {
         value={{
           Product,
           setProduct,
-        }}
-      >
+        }}>
         <CartContext.Provider
           value={{
             Cart,
             setCart,
-          }}
-        >
+          }}>
           <Home />
         </CartContext.Provider>
       </ProductContext.Provider>

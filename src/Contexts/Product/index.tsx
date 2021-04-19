@@ -11,6 +11,6 @@ export const ProductsObj = ProductsJSON;
 
 export const ProductContext = createContext<ProductContextType>({
   Product: ProductsJSON,
-  setProduct: (Product) => console.warn('no products provider')
+  setProduct: (Product) => console.warn('no products provider'),
 });
 export const useProduct = () => useContext(ProductContext);
