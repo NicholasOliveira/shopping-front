@@ -1,6 +1,6 @@
 [{
       "id": 1,
-      "name": "Maquininha de crédito",
+      "name": "Maquininha de Crédito",
       "img":{
         "title": "imagem da maquininha",
         "url": "https://via.placeholder.com/150"
@@ -14,14 +14,14 @@
       }
     },{
       "id": 3,
-      "name": "Maquininha de bolso",
+      "name": "Maquininha de Bolso",
       "img":{
         "title": "imagem da maquininha",
         "url": "https://via.placeholder.com/150"
       }
     },{
       "id": 4,
-      "name": "Maquininha de cartão PROFESSIONAL",
+      "name": "Maquininha PROFESSIONAL",
       "img":{
         "title": "imagem da maquininha",
         "url": "https://via.placeholder.com/150"
