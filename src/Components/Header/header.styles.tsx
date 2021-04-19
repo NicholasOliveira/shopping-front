@@ -8,3 +8,25 @@ export const Container = styled.div`
   align-items: center;
   padding: 15px;
 `;
+
+export const ContainerHeader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+`;
+
+export const Badge = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 12px;
+  height: 12px;
+  font-size: 10px;
+  border-radius: 50%;
+  background-color: #ca1717;
+  color: #ffffff;
+`;
