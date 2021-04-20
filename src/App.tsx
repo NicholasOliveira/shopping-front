@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import {
-  ProductContext,
-  ProductsObj,
-} from './Contexts/Product';
+import { ProductContext } from './Contexts/Product';
 import { CartContext } from './Contexts/Cart';
 import { Products } from './Interfaces/Products';
 import Routes from './Routes/Routes';
+
 function App() {
-  const [Product, setProduct] = useState(ProductsObj);
+  const [Product, setProduct] = useState<Products>([]);
   const [Cart, setCart] = useState<Products>([]);
 
   return (
